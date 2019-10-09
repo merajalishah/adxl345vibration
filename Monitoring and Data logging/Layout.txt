@@ -1,0 +1,52 @@
+Telemetry Viewer File Format v0.5
+
+GUI Settings:
+
+	tile column count = 6
+	tile row count = 6
+	show plot tooltips = true
+	smooth scrolling = true
+	opengl antialiasing = true
+	show fps and period = false
+	chart index for benchmarks = -1
+
+Communication Settings:
+
+	port = UART: COM3
+	uart baud rate = 2000000
+	tcp/udp port number = 8080
+	packet type = CSV
+	sample rate = 2743
+
+1 Data Structure Locations:
+
+	location = 0
+	processor index = -1
+	name = adxl345
+	color = 0x3333FF
+	unit = m/s2
+	conversion factor a = 1.0
+	conversion factor b = 0.04
+
+1 Charts:
+
+	chart type = Frequency Domain Chart
+	top left x = 0
+	top left y = 0
+	bottom right x = 5
+	bottom right y = 5
+	datasets = 0
+	sample count = 5000
+	total sample count = 100000
+	autoscale minimum power = false
+	manual minimum power = 1.4E-45
+	autoscale maximum power = true
+	manual maximum power = 0.001
+	type = Live View
+	waveform view row count = 60
+	show x-axis title = true
+	show x-axis scale = true
+	show y-axis title = true
+	show y-axis scale = true
+	show legend = true
+	show dft info = true
